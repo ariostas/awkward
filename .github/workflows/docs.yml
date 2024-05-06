@@ -349,8 +349,8 @@ jobs:
     if: github.event_name == 'push' || github.event_name == 'release'
     name: Deploy
     permissions:
+      pages: write
       id-token: write
-      contents: read
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
