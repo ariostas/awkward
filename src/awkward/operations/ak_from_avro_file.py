@@ -18,7 +18,7 @@ def from_avro_file(
     file,
     limit_entries=None,
     *,
-    debug_forth=False,
+    debug_forth=True,
     highlevel=True,
     behavior=None,
     attrs=None,

@@ -29,6 +29,7 @@ def test_long():
     filename = os.path.join(SAMPLES_DIR, "long_test_data.avro")
     data = [12, 435, 56, 12, 67, 34, 89, 2345, 536, 8769]
     assert ak.from_avro_file(file=filename).to_list() == data
+    assert False
 
 
 def test_float():
