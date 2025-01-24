@@ -118,6 +118,7 @@ class ReadAvroFT:
 
         for elem in form_keys:
             container[elem] = machine.output(elem)
+            print(f"Setting {elem}: {machine.output(elem)}")
 
         self.outcontents = (self.form, self.blocks, container)
 
