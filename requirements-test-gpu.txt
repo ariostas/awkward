@@ -1,0 +1,7 @@
+fsspec>=2022.11.0
+numba>=0.50.0
+cupy
+pytest>=6
+pytest-cov
+pytest-xdist
+uproot>=5
