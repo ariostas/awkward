@@ -38,6 +38,8 @@ jobs:
         package-dir: awkward-cpp
       env:
         CIBW_PLATFORM: pyodide
+        CIBW_BUILD: "cp313*"
+        CIBW_PYODIDE_VERSION: "0.28"
 
     - name: Upload wheel
       uses: actions/upload-artifact@v4
