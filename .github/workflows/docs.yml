@@ -39,7 +39,7 @@ jobs:
       env:
         CIBW_PLATFORM: pyodide
         CIBW_BUILD: "cp313*"
-        CIBW_PYODIDE_VERSION: "0.28"
+        CIBW_PYODIDE_VERSION: "0.28.0"
         CIBW_ENABLE: "pyodide-prerelease"
 
     - name: Upload wheel
