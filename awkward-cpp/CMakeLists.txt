@@ -39,8 +39,9 @@ endif()
 
 # Setup the RPATH for built libraries set(CMAKE_BUILD_RPATH_USE_ORIGIN TRUE)
 # set(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
-set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
+set(CMAKE_BUILD_RPATH_USE_ORIGIN TRUE)
 set(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
+set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 
 # Three tiers: [cpu-kernels (extern "C" interface), cuda-kernels (extern "C" interface)],
 # libawkward (C++), and Python modules.
